@@ -1,0 +1,77 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+header, section, footer {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Header */
+.header {
+    background: #000000;
+    color: white;
+    padding: 100px 0px;
+}
+
+/* Parallax Sections */
+.parallax {
+    position: relative;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.parallax-1 {
+    background-image: url('./img/universe.jpg');
+}
+
+.parallax-2 {
+    background-image: url('./img/solar system.jpg');
+}
+
+.parallax-3 {
+    background-image: url('./img/sun.avif');
+}
+
+/* Content Sections */
+.content {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.content-box {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* Animation Styles */
+[data-aos] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
