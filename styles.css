@@ -31,6 +31,7 @@ header, section, footer {
     justify-content: center;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    background-color: #000000;
 }
 
 .parallax-1 {
@@ -43,6 +44,13 @@ header, section, footer {
 
 .parallax-3 {
     background-image: url('./img/sun.avif');
+}
+
+.parallax-4 {
+    background-image: url('./img/closer.jpg');
+    background-size: contain;
+    width: 100%;
+    
 }
 
 /* Content Sections */
@@ -58,10 +66,14 @@ header, section, footer {
 }
 
 /* Footer */
-.footer {
-    background: #333;
+footer {
+    background: #3c3939;
     color: white;
     padding: 20px;
+    height: 700px;
+}
+footer h1 {
+    margin: 350px;
 }
 
 /* Animation Styles */
